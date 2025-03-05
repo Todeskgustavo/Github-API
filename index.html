@@ -15,7 +15,6 @@
         .repo { 
             background: white; 
             border-radius: 10px; 
-            padding-left: 9px;
             color: black;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -28,6 +27,10 @@
 </head>
 <body class="container">
     <h1 class="text-center my-4 fw-bold">Top Repositórios no GitHub</h1>
+    <form id="search-form" class="mb-4 d-flex">
+        <input type="text" id="search-input" class="form-control me-2" placeholder="Buscar repositórios...">
+        <button type="submit" class="btn btn-light">Buscar</button>
+    </form>
     <div id="repo-list" class="container">Carregando...</div>
 </body>
 </html>
